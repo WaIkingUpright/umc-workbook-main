@@ -1,0 +1,95 @@
+body{
+  margin: 0;
+}
+
+/*배너 및 초기화면*/
+.root-wrap{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  margin: 0;
+}
+.header-wrap{
+  display: flex;
+  background-color:darkslateblue;
+}
+.header-left{
+  display: flex;
+  margin: 15px;
+  margin-left: 15%;
+}
+img{
+  margin-top: 3px;
+}
+ul{
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+}
+p{
+  color: white;
+  margin: 0;
+  margin-right: 20px;
+}
+.login{
+  display: flex;
+}
+.loginBtn{
+  margin-right: 10px;
+  background-color: white;
+  color: black;
+  width: 70px;
+  border-radius: 30px;
+}
+/*Movies 컴포넌트*/
+.app-container{
+  display: grid;
+  min-width: 100vh;
+  margin: 50px;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: (3, 1fr);
+}
+.movieContainer{
+  position: relative;
+  width: 150px;
+  height: 400px;
+  margin: 3px;
+}
+.moviePicture{
+  width: 150px;
+  height: 300px;
+}
+.text{
+  height: 70px;
+  padding: 5px;
+  display: flex;
+  background-color: rgb(70, 59, 103);
+  font-size: 14px;
+  color: white;
+}
+.title{
+  width: 80%;
+}
+.vote_average{
+  text-align: center;
+  width: 20%;
+}
+.modal {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.7);
+  left: 0;
+  top: 0;
+  font-size: 13px;
+  overflow: auto;
+  height: 385px;
+  width: 150px;
+  color: white;
+  display: none;
+  flex-direction: column;
+}
+.movieContainer:hover{
+  .modal{
+    display: flex;
+  }
+}
