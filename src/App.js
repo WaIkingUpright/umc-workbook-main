@@ -6,6 +6,7 @@ import Celebrity from "./pages/Celebrity.jsx";
 import NotFound from "./pages/NotFound.jsx";
 import Header from "./components/Header.jsx";
 import {movies} from "./movieDummy.js";
+import MovieDetail from "./pages/MovieDetail.jsx";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/movie" element={<Movies {...movies}/>} />
+          <Route path="/movie/:title" element={<MovieDetail />}/>
           <Route path="/tv" element={<TV/>} />
           <Route path="/person" element={<Celebrity/>} />
           <Route path="/*" element={<NotFound/>} />
