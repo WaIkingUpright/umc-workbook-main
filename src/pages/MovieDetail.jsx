@@ -6,7 +6,7 @@ export default function MovieDetail() {
   const {state} = useLocation();
 
   return (
-    <div>
+    <div className='appContainer'>
         <div>
             <img src={state.poster_path} alt="" />
             {title}
