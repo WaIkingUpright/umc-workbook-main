@@ -26,11 +26,11 @@ class Login extends React.Component{
     render(){
         return (
             <div className='appContainer'>
-                <h1>이메일과 비밀번호를 입력해주세요!</h1>
+                <h1>이메일과 비밀번호를 입력해주세요!!</h1>
                 <form>
                     <p style={{color: "black"}}>이메일 주소</p>
                     <input className="mailAdress" name="mailAdress" placeholder='이메일 주소' onChange={this.emailChange}/>
-                    <p style={this.state.isEmailOn ? {color:'white'} : {color:'red'}}>
+                    <p style={this.state.isEmailOn ? {color:'white'} : {color:'red'}} > 
                         올바르지 않은 이메일 형식입니다.</p>
                     <p style={{color: "black"}}>비밀번호</p>
                     <input className="password" name="password" placeholder='영문,숫자,특수문자 포함' type='password' onChange={this.passwordChange}/>

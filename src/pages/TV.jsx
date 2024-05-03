@@ -8,7 +8,6 @@ export default function TV(programs) {
       programs.results.map((item) => {
         return (
           <TVprogram {...item}/>
-
         )
       })
     }

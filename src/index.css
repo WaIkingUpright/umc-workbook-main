@@ -31,6 +31,10 @@ p{
   color: white;
   margin: 0;
   margin-right: 20px;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  user-select:none;
 }
 .login{
   display: flex;
