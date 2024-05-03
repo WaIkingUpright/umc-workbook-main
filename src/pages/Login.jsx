@@ -26,7 +26,7 @@ class Login extends React.Component{
     render(){
         return (
             <div className='appContainer'>
-                <h1>이메일과 비밀번호를 입력해주세요!!</h1>
+                <h1>이메일과 비밀번호를 입력해주세요!</h1>
                 <form>
                     <p style={{color: "black"}}>이메일 주소</p>
                     <input className="mailAdress" name="mailAdress" placeholder='이메일 주소' onChange={this.emailChange}/>
